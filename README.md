@@ -1,5 +1,6 @@
 # YouTube Downloader
 
+[![Release](https://img.shields.io/github/v/release/dhruvdankhara/youtube-downloader)](https://github.com/dhruvdankhara/youtube-downloader/releases/latest)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Python](https://img.shields.io/badge/Python-3.8%2B-brightgreen.svg)](https://www.python.org/)
 [![Platform](https://img.shields.io/badge/Platform-Windows-lightgrey.svg)](https://www.microsoft.com/windows)
@@ -26,7 +27,14 @@ A modern, fast CLI application and standalone Windows executable for downloading
 
 ## Installation & Usage
 
-### Option 1: Run from Source (Python)
+### Option 1: Standalone Windows Executable (No Python Required)
+
+1. Download `YouTubeDownloader.exe` directly from the [Latest GitHub Release](https://github.com/dhruvdankhara/youtube-downloader/releases/latest).
+2. Double-click `YouTubeDownloader.exe` to run.
+
+---
+
+### Option 2: Run from Source (Python)
 
 1. **Clone the repository**:
    ```bash
@@ -52,9 +60,9 @@ A modern, fast CLI application and standalone Windows executable for downloading
 
 ---
 
-### Option 2: Build the Standalone Windows Executable
+### Option 3: Build the Standalone Windows Executable Locally
 
-To compile `app.py` into a single standalone `.exe` file without requiring Python on target machines:
+To compile `app.py` into a single standalone `.exe` file using PyInstaller:
 
 ```bash
 pyinstaller YouTubeDownloader.spec
@@ -67,7 +75,7 @@ dist/YouTubeDownloader.exe
 
 ---
 
-### Option 3: Quick Batch Script
+### Option 4: Quick Batch Script
 
 You can also run `download.bat` directly in Windows Command Prompt if you have `yt-dlp` installed in your PATH.
 
